@@ -1,5 +1,5 @@
 # logger
-A System32 based keylogger.
+A kernel based keylogger.
 
 ![Logger Task Manager](https://i.imgur.com/N0JWyxL.png)
 
