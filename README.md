@@ -1,5 +1,5 @@
 # logger
-A system-32 based keylogger.
+A System32 based keylogger.
 
 ![Logger Task Manager](https://i.imgur.com/N0JWyxL.png)
 
@@ -35,6 +35,15 @@ For compiling, you'll need:
 ## How It Works
 
 This software uses .NET Framework v4.0 to interact with `user32.dll` and `kernel32.dll` from `System` library and intercept all keys pressed by the input user and saving all the output to `log.txt` within the application path.
+
+## Updates
+###1.0.0.0
+* First release.
+* New logo.
+
+###1.2.0.0
+* Less code, better RAM usage.
+* Added a blank space after each capture.
 
 ## License
 
