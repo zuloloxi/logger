@@ -1,5 +1,5 @@
 # logger
-A kernel based keylogger.
+A kernel-based keylogger for Windows.
 
 ![Logger Task Manager](https://i.imgur.com/N0JWyxL.png)
 
