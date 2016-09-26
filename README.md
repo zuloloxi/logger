@@ -48,7 +48,6 @@ This is a free and open source software. As my personal project, you are able to
 
 For any concerns, critics, ideas and more, contact me at [felipebocolowski@outlook.com.br](mailto:felipebocolowski@outlook.com.br).
 
-[GNU GENERAL PUBLIC LICENSE](https://github.com/felipebocolowski/logger/blob/master/LICENSE/)
-
 Thanks for reading and downloading! :)
+
 Please share and contact for contributing.
