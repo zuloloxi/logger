@@ -1,7 +1,7 @@
 # Logger
 A kernel-based keylogger for Windows.
 
-![Logger Logo](https://i.imgur.com/rRXpB.png)
+![Logger Logo](https://i.imgur.com/mfjwg4e.png)
 
 ## DOWNLOAD
 
@@ -30,7 +30,7 @@ For compiling, you'll need:
 
 This software uses .NET Framework v4.0 to interact with `user32.dll` and `kernel32.dll` from `System` library and intercept all keys pressed by the input user and saving all the output to `log.txt` within the application path.
 
-Since 1.3.0.0, Logger is shown at the system tray, to hide it, start it passing the `-s` parameter `"Logger.exe" -s`.
+Since 1.3.0.0, Logger is shown at the system tray, to hide it, start it passing the `-s` parameter (`"Logger.exe" -s`).
 
 ## Updates
 ###1.0.0.0
