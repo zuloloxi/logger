@@ -44,7 +44,7 @@ Since 1.3.0.0, Logger is shown at the system tray, to hide it, start it passing 
 
 ## License
 
-This is a free and open source software. As my personal project, you are able to copy and distribute, but not to modify it.
+This is a free and open source software. As my personal project, you are able to copy, distribute, and modify as long as you keep my credits.
 
 For any concerns, critics, ideas and more, contact me at [felipebocolowski@outlook.com.br](mailto:felipebocolowski@outlook.com.br).
 
