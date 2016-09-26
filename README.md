@@ -1,15 +1,11 @@
 # Logger
 A kernel-based keylogger for Windows.
 
-![Logger Logo](https://i.imgur.com/mfjwg4e.png)
-
-## DOWNLOAD
+## Download
 
 [DOWNLOAD EXE HERE](https://github.com/felipebocolowski/logger/releases/)
 
-**Note:** This software should not be considered as a malware and/or spyware. Please report if it does.
-
-## How to Use
+**Note:** This software should not be considered as a malware and/or spyware.
 
 You can either:
 
