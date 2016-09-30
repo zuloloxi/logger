@@ -42,6 +42,10 @@ Since 1.3.0.0, Logger is shown at the system tray, to hide it, start it passing 
 * NEW! System tray icon.
 * NEW! Stealth mode passed by "-s" parameter.
 
+###1.4.0.0
+* Log file existence checking.
+* Hide button on system tray.
+
 ## License
 
 This is a free and open source software. As my personal project, you are able to copy, distribute, and modify as long as you keep my credits.

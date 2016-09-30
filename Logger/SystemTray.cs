@@ -27,6 +27,10 @@ namespace Logger
             menuItem_About.Click += new EventHandler(menuItem_About_Click);
             menuStrip.Items.Add(menuItem_About);
 
+            ToolStripMenuItem menuItem_Hide = new ToolStripMenuItem("Hide");
+            menuItem_Hide.Click += new EventHandler(menuItem_Hide_Click);
+            menuStrip.Items.Add(menuItem_Hide);
+
             ToolStripMenuItem menuItem_Exit = new ToolStripMenuItem("Exit");
             menuItem_Exit.Click += new EventHandler(menuItem_Exit_Click);
             menuStrip.Items.Add(menuItem_Exit);
@@ -34,6 +38,11 @@ namespace Logger
             trayIcon.ContextMenuStrip = menuStrip;
 
             trayIcon.Visible = true;
+        }
+
+        private void menuItem_Hide_Click(object sender, EventArgs e)
+        {
+            trayIcon.Visible = false;
         }
 
         private void menuItem_Exit_Click(object sender, EventArgs e)

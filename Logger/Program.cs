@@ -17,6 +17,11 @@ namespace Logger
     {
         static void Main(string[] args)
         {
+            if (!File.Exists(Path.GetDirectoryName(Application.ExecutablePath) + @"\log.txt"))
+            {
+                File.WriteAllText(Path.GetDirectoryName(Application.ExecutablePath) + @"\log.txt", "");
+            }
+
             var handle = GetConsoleWindow();
 
             ShowWindow(handle, SW_HIDE);
